@@ -1,0 +1,73 @@
+:root {
+  /* 🎨 Color palette */
+  --night: #101010ff;
+  --chamoisee: #b18558ff;
+  --tan: #d8b99cff;
+  --almond: #ebd3beff;
+  --champagne-pink: #f5e0cfff;
+  --linen: #feece0ff;
+
+  /* 🖌️ Design tokens */
+  --primary-color: var(--chamoisee);
+  --secondary-color: var(--tan);
+  --accent-color: var(--almond);
+
+  --bg-color: var(--linen);
+  --bg-alt-color: var(--champagne-pink);
+  --text-color: var(--night);
+
+  --font-family: "Arial", sans-serif;
+
+  --widget-padding: 1rem;
+  --widget-radius: 16px;
+  --widget-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--bg-color);
+  font-family: var(--font-family);
+  color: var(--text-color);
+}
+
+.widget {
+  padding: var(--widget-padding);
+  border-radius: var(--widget-radius);
+  box-shadow: var(--widget-shadow);
+  background: var(--bg-alt-color);
+  text-align: center;
+}
+
+.widget h1,
+.widget h2,
+.widget h3,
+.widget h4,
+.widget h5,
+.widget h6 {
+  color: var(--primary-color);
+  margin: 0.5rem 0;
+}
+
+.widget p {
+  color: var(--text-color);
+  margin: 0.25rem 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: var(--widget-radius);
+  background: var(--primary-color);
+  color: var(--linen);
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s ease-in-out;
+}
+
+.button:hover {
+  background: var(--secondary-color);
+}
